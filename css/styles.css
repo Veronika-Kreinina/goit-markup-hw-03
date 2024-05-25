@@ -10,8 +10,6 @@ body {
   max-width: 1158px;
   padding-left:  15px;
   padding-right:  15px;
-  margin-left:  0;
-  margin-right:  0;
   margin: 0 auto;
   }
   .section{
@@ -48,6 +46,7 @@ img{
 .header{
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-logo-link{
   font-family: "Raleway", sans-serif;
@@ -57,7 +56,6 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4D5AE5;
-margin-left: 156px;
 }
 
 .header-logo-span{
@@ -123,6 +121,8 @@ align-items: center;
 /* ---------------HERO SECTION --------------*/
 .hero{
   background-color:#2E2F42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-container{
 text-align: center;
@@ -135,6 +135,9 @@ text-align: center;
   text-align: center;
   color:#FFFFFF;
   margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button{
@@ -150,7 +153,7 @@ text-align: center;
   border: none;
   padding: 16px 32px;
   display: block;
-  margin: o auto;
+  margin: 0 auto;
 }
 
 .button:hover,
@@ -209,14 +212,20 @@ text-align: center;
   gap: 24px;
   text-align: center;
 }
-
+/* 
 .team-image{
-  margin-bottom: 32px;
-}
+
+} */
 
 .team-list-worker{
 background-color: #FFFFFF;
-border-radius: 4px;
+border-radius: 0 0 4px 4px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+width: calc((100% - 3 * 24px) / 4);
+}
+
+.team-container{
+  padding: 32px 16px;
 }
 
 .team-list-name{
@@ -237,8 +246,6 @@ line-height: 24px;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
-margin-top: 0;
-margin-bottom: 32px;
 }
 
 
@@ -266,14 +273,12 @@ padding-bottom: 72px;
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  width: calc((100%-2*24px)/3);
+ 
   text-align-last: left;
 }
-/* .portfolio-list-item{
-  border-bottom: 1px solid  #E7E9FC;
-  border-left: 1px solid #E7E9FC;
-border-right: 1px solid #E7E9FC;
-} */
+.portfolio-list-item{
+  width: calc((100% - 2 * 24px) / 3);
+}
 
 .portfolio-item-title{
 font-family: "Roboto", sans-serif;
@@ -282,6 +287,7 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2E2F42;
+margin-bottom: 8px;
 }
 
 .portfolio-item-descr{
@@ -317,4 +323,11 @@ color: #F4F4FD;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #F4F4FD;
+  max-width: 264px;
+  padding-top: 16px;
+}
+
+.footer-container{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
