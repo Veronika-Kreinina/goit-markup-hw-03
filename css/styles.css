@@ -115,6 +115,7 @@ align-items: center;
   color: #434455;
   font-style: normal;
   letter-spacing: 0.02em;
+  padding: 24px 0
 }
 .header-address-item:focus{
   color: #404bbf;
@@ -153,7 +154,6 @@ text-align: center;
   letter-spacing: 0.04em;
   border-radius: 4px;
   border: none;
-  padding: 16px 32px;
   display: block;
   margin: 0 auto;
   min-width: 169px;
